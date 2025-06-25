@@ -19,18 +19,17 @@ This is a **Product listing interface** built using **Next.js App Router**. It d
 
 ## 📁 Project Structure
 
-```
-
 cloudx-assignment/
 ├── src/
 │   ├── app/
 │   │   └── products/
 │   │       ├── page.tsx              # Product listing
-│   │       └── \[id]/                 # Dynamic product detail
+│   │       └── \[id]/                # Dynamic product detail
 │   │           └── page.tsx
 │   ├── lib/
 │   │   └── dummyProduct.ts           # Dummy products array
-│   ├── types.ts                      # Product interface
+│   ├── types/
+│   │   └── product.ts                # Product interface
 │
 ├── public/
 │   ├── Product1.jpg
@@ -42,7 +41,8 @@ cloudx-assignment/
 ├── next.config.js
 └── README.md
 
-````
+
+---
 
 ---
 
