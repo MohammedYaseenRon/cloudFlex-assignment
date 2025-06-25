@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```markdown
+# 🛍️ CloudX Assignment – Static Product Detail Page with Next.js App Router
 
-## Getting Started
+This is a **Product listing interface** built using **Next.js App Router**. It displays a list of dummy products and uses dynamic routes like `/products/[id]` to show product details.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- ✅ Next.js App Router (app directory)
+- ✅ Static generation with `generateStaticParams()`
+- ✅ Dummy product data 
+- ✅ Responsive Product Card & Detail Pages
+- ✅ TailwindCSS for UI
+- ✅ Fully typed with TypeScript
+- ✅ Optimized images via `next/image`
+
+---
+
+## 📁 Project Structure
+
+```
+
+cloudx-assignment/
+├── src/
+│   ├── app/
+│   │   └── products/
+│   │       ├── page.tsx              # Product listing
+│   │       └── \[id]/                 # Dynamic product detail
+│   │           └── page.tsx
+│   ├── lib/
+│   │   └── dummyProduct.ts           # Dummy products array
+│   ├── types.ts                      # Product interface
+│
+├── public/
+│   ├── Product1.jpg
+│   ├── Product2.jpg
+│   └── ...
+│
+├── tailwind.config.ts
+├── tsconfig.json
+├── next.config.js
+└── README.md
+
+````
+
+---
+
+## 🧠 Technologies Used
+
+- **Next.js 14+** (App Router)
+- **TypeScript**
+- **TailwindCSS**
+- **Lucide Icons**
+- **next/image**
+- Static Site Generation (SSG)
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone and install
+
+```bash
+git clone https://github.com/your-username/cloudx-assignment.git
+cd cloudx-assignment
+npm install
+````
+
+### 2. Run the dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit: [http://localhost:3000](http://localhost:3000)
+---
+## 📌 Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* `/products` → All products
+* `/products/[id]` → Dynamic product page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
